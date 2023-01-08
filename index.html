@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-使用hexo搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2023/01/08/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time datetime="2023-01-08T03:10:06.000Z" itemprop="datePublished">2023-01-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/01/08/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">使用hexo搭建博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=c749240dfe489e71ec336f64813c1bea">感谢CodeSheep的技术分享</a></p>
+<hr>
+<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1. 下载"></a>1. 下载</h2><h3 id="1-环境准备"><a href="#1-环境准备" class="headerlink" title="(1) 环境准备"></a>(1) 环境准备</h3><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/">官网在这</a></p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107154512525.png" alt="image-20230107154512525"></p>
+<p>下载长期支持版的</p>
+<p>然后一直安装即可</p>
+<p>安装完有两个组件</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107154719439.png" alt="image-20230107154719439"></p>
+<p>然后在命令行操作</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">node -v #查看Node的版本</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">v18.13.9  直接输出了，不用配置</span></span><br><span class="line">npm -v  #包管理器</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">8.19.3  包管理器的版本</span></span><br></pre></td></tr></table></figure>
+
+<p>Hexo是需要Node.js生成的，因此需要先下载这个</p>
+<h3 id="2-安装cnpm"><a href="#2-安装cnpm" class="headerlink" title="(2) 安装cnpm"></a>(2) 安装cnpm</h3><p>我们需要npm包管理器来安装，但是国内的镜像太慢，因此要利用npm来安装cnpm，就是淘宝的源(npm是Node.js自带的包管理器，但是我们需要的是淘宝的源)</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107155236840.png" alt="image-20230107155236840"></p>
+<p>输入第一行指令，自动安装了</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cnpm #输出信息就可以知道安装成功了</span><br><span class="line">cnpm -v</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-安装hexo框架"><a href="#3-安装hexo框架" class="headerlink" title="(3) 安装hexo框架"></a>(3) 安装hexo框架</h3><p>用cnpm来安装hexo框架</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>-g是全局安装的意思</p>
+</blockquote>
+<p>然后自动安装好hexo框架了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v # 验证安装</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-Hexo搭建博客"><a href="#2-Hexo搭建博客" class="headerlink" title="2. Hexo搭建博客"></a>2. Hexo搭建博客</h2><h3 id="1-初始化博客"><a href="#1-初始化博客" class="headerlink" title="(1) 初始化博客"></a>(1) 初始化博客</h3><p>先建立一个目录来存储博客文件，有什么问题将目录干掉重来即可</p>
+<p>然后进入这个博客</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init # 初始化这个博客</span><br></pre></td></tr></table></figure>
+
+<p>等待一段时间安装好</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107160209013.png" alt="image-20230107160209013"></p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107160224116.png" alt="image-20230107160224116"></p>
+<p>这是博客基础的框架内容</p>
+<h3 id="2-启动博客"><a href="#2-启动博客" class="headerlink" title="(2) 启动博客"></a>(2) 启动博客</h3><p>然后启动博客</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107160402826.png" alt="image-20230107160402826"></p>
+<p>在4000这个端口开了一个博客</p>
+<p>localhost:4000</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107160424866.png" alt="image-20230107160424866"></p>
+<p>里面有hexo的内容</p>
+<h3 id="3-新建一篇文章"><a href="#3-新建一篇文章" class="headerlink" title="(3) 新建一篇文章"></a>(3) 新建一篇文章</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;我的第一篇文章&quot;</span><br></pre></td></tr></table></figure>
+
+<p>n是new的意思</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107160733566.png" alt="image-20230107160733566"></p>
+<p>自动创建了md的文章</p>
+<p>可以看到文章都是在_posts这个目录中</p>
+<p>然后可以用编辑器编辑了</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 我的第一篇文章</span><br><span class="line">date: 2023-01-07 16:07:25</span><br><span class="line"><span class="section">tags:</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>这是自动生成的内容，不要改了，在下面写内容</p>
+<h3 id="4-生成一篇文章"><a href="#4-生成一篇文章" class="headerlink" title="(4) 生成一篇文章"></a>(4) 生成一篇文章</h3><p>回到blog目录</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>g是generate的意思</p>
+</blockquote>
+<p>然后就生成这篇文章了</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107161312731.png" alt="image-20230107161312731"></p>
+<p>生成了2023/01/07这个了</p>
+<h3 id="5-重新启动查看"><a href="#5-重新启动查看" class="headerlink" title="(5) 重新启动查看"></a>(5) 重新启动查看</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s # 重新打开hexo</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107161839129.png" alt="image-20230107161839129"></p>
+<h2 id="3-部署博客"><a href="#3-部署博客" class="headerlink" title="3. 部署博客"></a>3. 部署博客</h2><p>博客肯定是要部署到远端的，没有服务器的话，可以免费部署到GitHub上</p>
+<h3 id="1-新建仓库"><a href="#1-新建仓库" class="headerlink" title="(1) 新建仓库"></a>(1) 新建仓库</h3><p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107162244991.png" alt="image-20230107162244991"></p>
+<p>名字必须是 昵称.github.io</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107162329388.png" alt="image-20230107162329388"></p>
+<h3 id="2-安装git插件"><a href="#2-安装git插件" class="headerlink" title="(2) 安装git插件"></a>(2) 安装git插件</h3><p>要部署到GitHub需要安装插件</p>
+<p>到了blog目录下</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107162516659.png" alt="image-20230107162516659"></p>
+<h3 id="3-配置"><a href="#3-配置" class="headerlink" title="(3) 配置"></a>(3) 配置</h3><p>就是设置_config.yml文件</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&#x27;https://github.com/CrispyCandy750/CrispyCandy750.github.io.git&#x27;</span> <span class="comment"># 生成文件的http地址复制过来，使用SSh地址好像部署的时候不用密码</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">&#x27;master&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-部署"><a href="#4-部署" class="headerlink" title="(4) 部署"></a>(4) 部署</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>d是deploy的意思</p>
+</blockquote>
+<p>然后就会部署了</p>
+<p>之前使用的SSH地址就不需要输入密码</p>
+<p>然后刷新GitHub的仓库</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107163233006.png" alt="image-20230107163233006"></p>
+<h3 id="5-访问博客"><a href="#5-访问博客" class="headerlink" title="(5) 访问博客"></a>(5) 访问博客</h3><p>仓库名就是博客的地址 <code>CrispyCandy750.github.io</code></p>
+<h2 id="4-自定义主题"><a href="#4-自定义主题" class="headerlink" title="4. 自定义主题"></a>4. 自定义主题</h2><h3 id="1-下载主题"><a href="#1-下载主题" class="headerlink" title="(1) 下载主题"></a>(1) 下载主题</h3><p>这里演示如何自定义主题</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia">https://github.com/litten/hexo-theme-yilia</a></p>
+<p>在这个网站中设置的，下载主题</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/litten/hexo-theme-yilia themes/yilia</span><br></pre></td></tr></table></figure>
+
+<p>将这个仓库下载到blog/themes/yilia下面</p>
+<h3 id="2-配置主题"><a href="#2-配置主题" class="headerlink" title="(2) 配置主题"></a>(2) 配置主题</h3><p>还是修改_conig.yml文件</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">yilia</span></span><br></pre></td></tr></table></figure>
+
+<p>将原来的主题换成yilia即可</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107164310243.png" alt="image-20230107164310243"></p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107164742266-16730812627801.png" alt="image-20230107164742266"></p>
+<p>发现博客主题已经变了</p>
+<p>然后重新部署</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>改了主题不是立马生效，多刷新一下</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/01/08/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="clcmsuj890001acwo0mvd6xsj" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2023/01/08/hello-world/" class="article-date">
+  <time datetime="2023-01-08T03:06:16.734Z" itemprop="datePublished">2023-01-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/01/08/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/01/08/hello-world/" data-id="clcmsuj7u0000acwo3goz5in5" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/01/08/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">使用hexo搭建博客</a>
+          </li>
+        
+          <li>
+            <a href="/2023/01/08/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
