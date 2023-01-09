@@ -4,9 +4,18 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="newPost, life,study,share,read">
-    <meta name="description" content="newPost这是一篇推荐文章
-">
+    <meta name="keywords" content="使用hexo搭建博客, life,study,share,read">
+    <meta name="description" content="感谢CodeSheep的技术分享
+1. 下载(1) 环境准备官网在这
+
+下载长期支持版的
+然后一直安装即可
+安装完有两个组件
+
+然后在命令行操作
+node -v #查看Node的版本
+# v18.13.9  直接输出了，不用配置
+npm -">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,9 +27,18 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>newPost | Blog of Crispy Candy</title>
+    <title>使用hexo搭建博客 | 酥心糖的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
+    <style>
+        body{
+            background-image: url(https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/bgc.jpg);
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            background-attachment:fixed;
+        }
+    </style>
+
 
 
     <!-- bg-cover style     -->
@@ -46,8 +64,6 @@
 
 
     
-        <link rel="stylesheet" type="text/css" href="/css/reward.css">
-    
 
 
 
@@ -55,6 +71,7 @@
 
 <meta name="generator" content="Hexo 5.4.2">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="酥心糖的博客" type="application/atom+xml">
 </head>
 
 
@@ -67,7 +84,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">Blog of Crispy Candy</span>
+                    <span class="logo-span">酥心糖的博客</span>
                 </a>
             </div>
             
@@ -160,7 +177,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">Blog of Crispy Candy</div>
+        <div class="logo-name">酥心糖的博客</div>
         <div class="logo-desc">
             
             Never really desperate, only the lost of the soul.
@@ -315,12 +332,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">newPost</h1>
+                    <h1 class="description center-align post-title">使用hexo搭建博客</h1>
                 </div>
             </div>
         </div>
@@ -342,9 +359,17 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">笔记</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                                <span class="chip bg-color">博客</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -361,12 +386,32 @@
                 
 
                 
-
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-01-08
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    839
+                </div>
+                
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    3 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -380,7 +425,125 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="newPost"><a href="#newPost" class="headerlink" title="newPost"></a>newPost</h1><p>这是一篇推荐文章</p>
+                <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty/?spm_id_from=333.1007.top_right_bar_window_history.content.click&amp;vd_source=c749240dfe489e71ec336f64813c1bea">感谢CodeSheep的技术分享</a></p>
+<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1. 下载"></a>1. 下载</h2><h3 id="1-环境准备"><a href="#1-环境准备" class="headerlink" title="(1) 环境准备"></a>(1) 环境准备</h3><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/">官网在这</a></p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107154512525.png" alt="image-20230107154512525"></p>
+<p>下载长期支持版的</p>
+<p>然后一直安装即可</p>
+<p>安装完有两个组件</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107154719439.png" alt="image-20230107154719439"></p>
+<p>然后在命令行操作</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">node</span> <span class="token parameter variable">-v</span> <span class="token comment">#查看Node的版本</span>
+<span class="token comment"># v18.13.9  直接输出了，不用配置</span>
+<span class="token function">npm</span> <span class="token parameter variable">-v</span>  <span class="token comment">#包管理器</span>
+<span class="token comment"># 8.19.3  包管理器的版本</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Hexo是需要Node.js生成的，因此需要先下载这个</p>
+<h3 id="2-安装cnpm"><a href="#2-安装cnpm" class="headerlink" title="(2) 安装cnpm"></a>(2) 安装cnpm</h3><p>我们需要npm包管理器来安装，但是国内的镜像太慢，因此要利用npm来安装cnpm，就是淘宝的源(npm是Node.js自带的包管理器，但是我们需要的是淘宝的源)</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107155236840.png" alt="image-20230107155236840"></p>
+<p>输入第一行指令，自动安装了</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cnpm <span class="token comment">#输出信息就可以知道安装成功了</span>
+cnpm <span class="token parameter variable">-v</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="3-安装hexo框架"><a href="#3-安装hexo框架" class="headerlink" title="(3) 安装hexo框架"></a>(3) 安装hexo框架</h3><p>用cnpm来安装hexo框架</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cnpm <span class="token function">install</span> <span class="token parameter variable">-g</span> hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<blockquote>
+<p>-g是全局安装的意思</p>
+</blockquote>
+<p>然后自动安装好hexo框架了</p>
+<pre class="line-numbers language-none"><code class="language-none">hexo -v # 验证安装<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="2-Hexo搭建博客"><a href="#2-Hexo搭建博客" class="headerlink" title="2. Hexo搭建博客"></a>2. Hexo搭建博客</h2><h3 id="1-初始化博客"><a href="#1-初始化博客" class="headerlink" title="(1) 初始化博客"></a>(1) 初始化博客</h3><p>先建立一个目录来存储博客文件，有什么问题将目录干掉重来即可</p>
+<p>然后进入这个博客</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo init <span class="token comment"># 初始化这个博客</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>等待一段时间安装好</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107160209013.png" alt="image-20230107160209013"></p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107160224116.png" alt="image-20230107160224116"></p>
+<p>这是博客基础的框架内容</p>
+<h3 id="2-启动博客"><a href="#2-启动博客" class="headerlink" title="(2) 启动博客"></a>(2) 启动博客</h3><p>然后启动博客</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107160402826.png" alt="image-20230107160402826"></p>
+<p>在4000这个端口开了一个博客</p>
+<p>localhost:4000</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107160424866.png" alt="image-20230107160424866"></p>
+<p>里面有hexo的内容</p>
+<h3 id="3-新建一篇文章"><a href="#3-新建一篇文章" class="headerlink" title="(3) 新建一篇文章"></a>(3) 新建一篇文章</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo n <span class="token string">"我的第一篇文章"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>n是new的意思</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107160733566.png" alt="image-20230107160733566"></p>
+<p>自动创建了md的文章</p>
+<p>可以看到文章都是在_posts这个目录中</p>
+<p>然后可以用编辑器编辑了</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml">title: 我的第一篇文章
+date: 2023-01-07 16:07:25
+tags:</span>
+<span class="token punctuation">---</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>这是自动生成的内容，不要改了，在下面写内容</p>
+<h3 id="4-生成一篇文章"><a href="#4-生成一篇文章" class="headerlink" title="(4) 生成一篇文章"></a>(4) 生成一篇文章</h3><p>回到blog目录</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean
+hexo g<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>g是generate的意思，这个是将md文件生成页面文件</p>
+</blockquote>
+<p>然后就生成这篇文章了</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107161312731.png" alt="image-20230107161312731"></p>
+<p>生成了2023/01/07这个了</p>
+<h3 id="5-重新启动查看"><a href="#5-重新启动查看" class="headerlink" title="(5) 重新启动查看"></a>(5) 重新启动查看</h3><pre class="line-numbers language-none"><code class="language-none">hexo s # 重新打开hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107161839129.png" alt="image-20230107161839129"></p>
+<h2 id="3-部署博客"><a href="#3-部署博客" class="headerlink" title="3. 部署博客"></a>3. 部署博客</h2><p>博客肯定是要部署到远端的，没有服务器的话，可以免费部署到GitHub上</p>
+<h3 id="1-新建仓库"><a href="#1-新建仓库" class="headerlink" title="(1) 新建仓库"></a>(1) 新建仓库</h3><p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107162244991.png" alt="image-20230107162244991"></p>
+<p>名字必须是 昵称.github.io</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107162329388.png" alt="image-20230107162329388"></p>
+<h3 id="2-安装git插件"><a href="#2-安装git插件" class="headerlink" title="(2) 安装git插件"></a>(2) 安装git插件</h3><p>要部署到GitHub需要安装插件</p>
+<p>到了blog目录下</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cnpm <span class="token function">install</span> <span class="token parameter variable">--save</span> hexo-deployer-git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107162516659.png" alt="image-20230107162516659"></p>
+<h3 id="3-配置"><a href="#3-配置" class="headerlink" title="(3) 配置"></a>(3) 配置</h3><p>就是设置_config.yml文件</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># Deployment</span>
+<span class="token comment">## Docs: https://hexo.io/docs/one-command-deployment</span>
+<span class="token key atrule">deploy</span><span class="token punctuation">:</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> <span class="token string">'git'</span>
+  <span class="token key atrule">repo</span><span class="token punctuation">:</span> <span class="token string">'https://github.com/CrispyCandy750/CrispyCandy750.github.io.git'</span> <span class="token comment"># 生成文件的http地址复制过来，使用SSh地址好像部署的时候不用密码</span>
+  <span class="token key atrule">branch</span><span class="token punctuation">:</span> <span class="token string">'master'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="4-部署"><a href="#4-部署" class="headerlink" title="(4) 部署"></a>(4) 部署</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<blockquote>
+<p>d是deploy的意思</p>
+</blockquote>
+<p>然后就会部署了</p>
+<p>之前使用的SSH地址就不需要输入密码</p>
+<p>然后刷新GitHub的仓库</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107163233006.png" alt="image-20230107163233006"></p>
+<h3 id="5-访问博客"><a href="#5-访问博客" class="headerlink" title="(5) 访问博客"></a>(5) 访问博客</h3><p>仓库名就是博客的地址 <code>CrispyCandy750.github.io</code></p>
+<h2 id="4-自定义主题"><a href="#4-自定义主题" class="headerlink" title="4. 自定义主题"></a>4. 自定义主题</h2><h3 id="1-下载主题"><a href="#1-下载主题" class="headerlink" title="(1) 下载主题"></a>(1) 下载主题</h3><p>这里演示如何自定义主题</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia">https://github.com/litten/hexo-theme-yilia</a></p>
+<p>在这个网站中设置的，下载主题</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/litten/hexo-theme-yilia themes/yilia<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>将这个仓库下载到blog/themes/yilia下面</p>
+<h3 id="2-配置主题"><a href="#2-配置主题" class="headerlink" title="(2) 配置主题"></a>(2) 配置主题</h3><p>还是修改_conig.yml文件</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># Extensions</span>
+<span class="token comment">## Plugins: https://hexo.io/plugins/</span>
+<span class="token comment">## Themes: https://hexo.io/themes/</span>
+<span class="token key atrule">theme</span><span class="token punctuation">:</span> yilia<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>将原来的主题换成yilia即可</p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107164310243.png" alt="image-20230107164310243"></p>
+<p><img src="https://crispy-candy-image.oss-cn-beijing.aliyuncs.com/img/image-20230107164742266-16730812627801.png" alt="image-20230107164742266"></p>
+<p>发现博客主题已经变了</p>
+<p>然后重新部署</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>改了主题不是立马生效，多刷新一下</p>
 
                 
             </div>
@@ -407,7 +570,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://crispycandy.top/uncategorized/newPost/">http://crispycandy.top/uncategorized/newPost/</a>
+                    <a href="http://crispycandy.top/uncategorized/shi-yong-hexoda-jian-bo-ke/">http://crispycandy.top/uncategorized/shi-yong-hexoda-jian-bo-ke/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -444,7 +607,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">笔记</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                                    <span class="chip bg-color">博客</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -463,39 +634,6 @@
 
                 </div>
             </div>
-            
-                <div id="reward">
-    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
-
-    <!-- Modal Structure -->
-    <div id="rewardModal" class="modal">
-        <div class="modal-content">
-            <a class="close modal-close"><i class="fas fa-times"></i></a>
-            <h4 class="reward-title">你的赏识是我前进的动力</h4>
-            <div class="reward-content">
-                <div class="reward-tabs">
-                    <ul class="tabs row">
-                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
-                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
-                    </ul>
-                    <div id="alipay">
-                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
-                    </div>
-                    <div id="wechat">
-                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    $(function () {
-        $('.tabs').tabs();
-    });
-</script>
-
             
         </div>
     </div>
@@ -526,13 +664,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/uncategorized/newPost/">
+                <a href="/uncategorized/shi-yong-hexoda-jian-bo-ke/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="newPost">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="使用hexo搭建博客">
                         
-                        <span class="card-title">newPost</span>
+                        <span class="card-title">使用hexo搭建博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -555,22 +693,34 @@
                 </div>
 
                 
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">博客</span>
+                    </a>
+                    
+                </div>
+                
             </div>
         </div>
         
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/uncategorized/%E6%8E%A8%E8%8D%90%E6%96%87%E7%AB%A0/">
+                <a href="/uncategorized/shi-yong-hexoda-jian-bo-ke/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="推荐文章">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="使用hexo搭建博客">
                         
-                        <span class="card-title">推荐文章</span>
+                        <span class="card-title">使用hexo搭建博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -590,6 +740,19 @@
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">博客</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -651,8 +814,8 @@
             tocSelector: '#toc-content',
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
+            collapseDepth: Number('5'),
+            headingSelector: 'h2, h3, h4, h5, h6'
         });
 
         // Set scroll toc fixed.
@@ -776,15 +939,16 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2023</span>
+                <span id="year">2023</span>
             
             <a href="/about" target="_blank">Crispy Candy</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             
-                <span id="translate">|&nbsp;繁/简：</span><a id="translateLink" href="javascript:translatePage();">繁</a>
-            
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">839</span>
             
             
             
@@ -810,13 +974,13 @@
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/CrispyCandy750" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:crispycandy750@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
@@ -825,10 +989,6 @@
 
 
 
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
 
 
 
@@ -993,17 +1153,6 @@ $(function () {
     
 
     
-        <script type="text/javascript" src="/js/tw_cn.js"></script>
-        <script type="text/javascript">
-          var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
-          var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
-          var cookieDomain = "http://crispycandy.top"; //Cookie地址, 一定要设定, 通常为你的网址
-          var msgToTraditionalChinese = "繁"; //此处可以更改为你想要显示的文字
-          var msgToSimplifiedChinese = "简"; //同上，但两处均不建议更改
-          var translateButtonId = "translateLink"; //默认互换id
-          translateInitilization();
-        </script>
-    
     
     
 
@@ -1038,8 +1187,6 @@ $(function () {
 </script>
 
     
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
@@ -1050,6 +1197,11 @@ $(function () {
 
     <!--腾讯兔小巢-->
     
+    
+    <script type="text/javascript" color="252,219,184"
+        pointColor="254,240,213" opacity='1'
+        zIndex="-1" count="120"
+        src="/libs/background/canvas-nest.js"></script>
     
 
     
